@@ -32,7 +32,7 @@ export default function App() {
       <View>
 
         <TextInput
-          style={styles.TextInput}
+          style={styles.InputEmail}
           placeholder="Digite seu email"
           placeholderTextColor="#aaa"
           value={email}
@@ -40,7 +40,7 @@ export default function App() {
         />
 
 
-        <View style={styles.inputContainer}>
+        <View style={styles.InputSenha}>
           <TextInput
             style={styles.inputComIcone}
             placeholder="Digite sua senha"
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
 
-  TextInput: {
+  InputEmail: {
     borderRadius: 10,
     backgroundColor: "#021123",
     width: 317,
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     marginTop: -70,
   },
 
-  inputContainer: {
+  InputSenha: {
     flexDirection: "row",
     alignItems: "center",
     borderRadius: 10,
