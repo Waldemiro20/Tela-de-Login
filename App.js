@@ -64,13 +64,20 @@ export default function App() {
           <Text style={styles.textoBotao}>Entrar</Text>
         </TouchableOpacity>
 
+        <Text
+          style={styles.TextLink}
+          onPress={() => Linking.openURL("Cadastro.js")}
+        >
+          Já tem uma conta? Cadastre-se.
+        </Text>
 
         <Text
           style={styles.TextLink}
-          onPress={() => Linking.openURL("https://github.com/Waldemiro20/Tela-de-Login.git")}
+          onPress={() => Linking.openURL("RecuperarSenha.js")}
         >
           Esqueci minha senha.
         </Text>
+
       </View>
 
       <StatusBar style="auto" />
@@ -102,7 +109,7 @@ const styles = StyleSheet.create({
   InputEmail: {
     borderRadius: 10,
     backgroundColor: "#021123",
-    width: 317,
+    width: 330,
     height: 53,
     borderWidth: 1,
     borderColor: "#fff",
@@ -118,7 +125,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 10,
     backgroundColor: "#021123",
-    width: 317,
+    width: 330,
     height: 53,
     borderWidth: 1,
     borderColor: "#fff",
@@ -140,25 +147,25 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
 
- botao: {
-  width: 317,
-  height: 53,
-  backgroundColor: "#4da6ff",
-  borderRadius: 10,
-  justifyContent: "center",
-  alignItems: "center",
-},
+  botao: {
+    width: 330,
+    height: 53,
+    backgroundColor: "#4da6ff",
+    borderRadius: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 
-textoBotao: {
-  color: "#fff",
-  fontSize: 18,
-  fontWeight: "bold",
-},
+  textoBotao: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "bold",
+  },
 
-TextLink: {
-  color: "#4da6ff",
-  fontSize: 16,
-  marginTop: 20,
-  textAlign: "center",
-},
+  TextLink: {
+    color: "#4da6ff",
+    fontSize: 16,
+    marginTop: 20,
+    textAlign: "center",
+  },
 });
